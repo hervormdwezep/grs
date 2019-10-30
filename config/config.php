@@ -110,10 +110,10 @@ $conf['settings']['uploads']['reservation.attachment.extensions'] = 'txt,jpg,gif
  * Database configuration
  */
 $conf['settings']['database']['type'] = 'mysql';
-$conf['settings']['database']['user'] = 'booked_user';        // database user with permission to the booked database
-$conf['settings']['database']['password'] = 'password';
-$conf['settings']['database']['hostspec'] = '127.0.0.1';        // ip, dns or named pipe
-$conf['settings']['database']['name'] = 'bookedscheduler';
+$conf['settings']['database']['user'] = getenv('MYSQL_USER');        // database user with permission to the booked database
+$conf['settings']['database']['password'] = getenv('MYSQL_PASSWORD');
+$conf['settings']['database']['hostspec'] = 'ip-10-0-131-122.us-west-1.compute.internal';        // ip, dns or named pipe
+$conf['settings']['database']['name'] = getenv('MYSQL_DATABASE');
 /**
  * Mail server configuration
  */
