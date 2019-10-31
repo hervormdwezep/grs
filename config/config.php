@@ -110,10 +110,10 @@ $conf['settings']['uploads']['reservation.attachment.extensions'] = 'txt,jpg,gif
  * Database configuration
  */
 $conf['settings']['database']['type'] = 'mysql';
-$conf['settings']['database']['user'] = getenv('MYSQL_USER');        // database user with permission to the booked database
-$conf['settings']['database']['password'] = getenv('MYSQL_PASSWORD');
-$conf['settings']['database']['hostspec'] = 'ip-10-0-131-122.us-west-1.compute.internal';        // ip, dns or named pipe
-$conf['settings']['database']['name'] = getenv('MYSQL_DATABASE');
+$conf['settings']['database']['user'] = 'booked_user';        // database user with permission to the booked database
+$conf['settings']['database']['password'] = 'rhgOv7J6R7YRJ2ns';
+$conf['settings']['database']['hostspec'] = 'grs-git-grs.apps.us-west-1.starter.openshift-online.com';        // ip, dns or named pipe
+$conf['settings']['database']['name'] = 'booked_db';
 /**
  * Mail server configuration
  */
