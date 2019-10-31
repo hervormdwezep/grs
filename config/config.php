@@ -110,7 +110,7 @@ $conf['settings']['uploads']['reservation.attachment.extensions'] = 'txt,jpg,gif
  * Database configuration
  */
 $conf['settings']['database']['type'] = 'mysql';
-$conf['settings']['database']['user'] = 'booked_user';        // database user with permission to the booked database
+$conf['settings']['database']['user'] = 'booked_user2';        // database user with permission to the booked database
 $conf['settings']['database']['password'] = 'rhgOv7J6R7YRJ2ns';
 $conf['settings']['database']['hostspec'] = '172.30.228.63';        // ip, dns or named pipe
 $conf['settings']['database']['name'] = 'booked_db';
