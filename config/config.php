@@ -32,7 +32,7 @@ $conf['settings']['admin.email'] = 'hborkhuis@gmail.com';         // email addre
 $conf['settings']['admin.email.name'] = 'Booked Administrator';	// name to be used in From: field when sending automatic emails
 $conf['settings']['default.page.size'] = '50';                  // number of records per page
 $conf['settings']['enable.email'] = 'true';                     // global configuration to enable if any emails will be sent
-$conf['settings']['default.language'] = 'en_us';                // find your language in the lang directory
+$conf['settings']['default.language'] = 'du_nl';                // find your language in the lang directory
 $conf['settings']['script.url'] = 'http://localhost/Web';   	// public URL to the Web directory of this instance. this is the URL that appears when you are logging in. leave http: or https: off to auto-detect
 $conf['settings']['image.upload.directory'] = 'Web/uploads/images'; // full or relative path to where images will be stored
 $conf['settings']['image.upload.url'] = 'uploads/images';       // full or relative path to show uploaded images from
@@ -59,7 +59,7 @@ $conf['settings']['schedule']['update.highlight.minutes'] = '0';    // if set, w
 /**
  * ical integration configuration
  */
-$conf['settings']['ics']['subscription.key'] = '';              // must be set to allow webcal subscriptions
+$conf['settings']['ics']['subscription.key'] = '7856283658726351873265872135';              // must be set to allow webcal subscriptions
 $conf['settings']['ics']['future.days'] = 30;
 $conf['settings']['ics']['past.days'] = 0;
 /**
