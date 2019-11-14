@@ -26,14 +26,14 @@ error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT);
  * Application configuration
  */
 $conf['settings']['app.title'] = 'Booked Scheduler';			// application title
-$conf['settings']['default.timezone'] = 'America/New_York';      // look up here http://php.net/manual/en/timezones.php
-$conf['settings']['allow.self.registration'] = 'true';         	// if users can register themselves
+$conf['settings']['default.timezone'] = 'Europe/Amsterdam';      // look up here http://php.net/manual/en/timezones.php
+$conf['settings']['allow.self.registration'] = 'false';         	// if users can register themselves
 $conf['settings']['admin.email'] = 'hborkhuis@gmail.com';         // email address of admin user
 $conf['settings']['admin.email.name'] = 'Booked Administrator';	// name to be used in From: field when sending automatic emails
 $conf['settings']['default.page.size'] = '50';                  // number of records per page
 $conf['settings']['enable.email'] = 'true';                     // global configuration to enable if any emails will be sent
 $conf['settings']['default.language'] = 'du_nl';                // find your language in the lang directory
-$conf['settings']['script.url'] = 'http://localhost/Web';   	// public URL to the Web directory of this instance. this is the URL that appears when you are logging in. leave http: or https: off to auto-detect
+$conf['settings']['script.url'] = 'http://grs-git-grs.apps.us-west-1.starter.openshift-online.com/Web';   	// public URL to the Web directory of this instance. this is the URL that appears when you are logging in. leave http: or https: off to auto-detect
 $conf['settings']['image.upload.directory'] = 'Web/uploads/images'; // full or relative path to where images will be stored
 $conf['settings']['image.upload.url'] = 'uploads/images';       // full or relative path to show uploaded images from
 $conf['settings']['cache.templates'] = 'true';                  // true recommended, caching template files helps web pages render faster
@@ -176,7 +176,7 @@ $conf['settings']['reservation.labels']['ics.summary'] = '{title}';
 $conf['settings']['reservation.labels']['ics.my.summary'] = '{title}';
 $conf['settings']['reservation.labels']['rss.description'] = '<div><span>Start</span> {startdate}</div><div><span>End</span> {enddate}</div><div><span>Organizer</span> {name}</div><div><span>Description</span> {description}</div>';
 $conf['settings']['reservation.labels']['my.calendar'] = '{resourcename} {title}';
-$conf['settings']['reservation.labels']['resource.calendar'] = '{name}';
+$conf['settings']['reservation.labels']['resource.calendar'] = '{title}';
 $conf['settings']['reservation.labels']['reservation.popup'] = ''; // Format for what to display in reservation popups. Possible values: {name} {dates} {title} {resources} {participants} {accessories} {description} {attributes} {pending} {duration}. Custom attributes can be added using att with the attribute id. For example {att1}
 /**
  * Security header settings
@@ -192,8 +192,8 @@ $conf['settings']['security']['security.content-security-policy'] = ""; // Requi
  */
 $conf['settings']['google.analytics']['tracking.id'] = ''; // if set, Google Analytics tracking code will be added to every page in Booked
 
-$conf['settings']['authentication']['allow.facebook.login'] = 'true';
-$conf['settings']['authentication']['allow.google.login'] = 'true';
+$conf['settings']['authentication']['allow.facebook.login'] = 'false';
+$conf['settings']['authentication']['allow.google.login'] = 'false';
 $conf['settings']['authentication']['required.email.domains'] = '';
 $conf['settings']['authentication']['hide.booked.login.prompt'] = 'false';
 $conf['settings']['authentication']['captcha.on.login'] = 'false';
