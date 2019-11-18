@@ -1,10 +1,10 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 METHOD:REQUEST
+X-WR-TIMEZONE:Europe/Amsterdam
 PRODID:-//BookedScheduler//NONSGML {$bookedVersion}//EN
 {foreach from=$Reservations item=reservation}
 BEGIN:VEVENT
-X-WR-TIMEZONE:Europe/Amsterdam
 CLASS:PUBLIC
 CREATED:{formatdate date=$reservation->DateCreated key=ical}
 DESCRIPTION:{$reservation->Description|regex_replace:"/\r\n|\n|\r/m":"\n "}
