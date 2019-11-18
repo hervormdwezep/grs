@@ -4,6 +4,7 @@ METHOD:REQUEST
 PRODID:-//BookedScheduler//NONSGML {$bookedVersion}//EN
 {foreach from=$Reservations item=reservation}
 BEGIN:VEVENT
+X-WR-TIMEZONE:Europe/Amsterdam
 CLASS:PUBLIC
 CREATED:{formatdate date=$reservation->DateCreated key=ical}
 DESCRIPTION:{$reservation->Description|regex_replace:"/\r\n|\n|\r/m":"\n "}
