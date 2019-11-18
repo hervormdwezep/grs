@@ -1,6 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 METHOD:REQUEST
+X-WR-TIMEZONE:Europe/Amsterdam
 PRODID:-//BookedScheduler//NONSGML {$bookedVersion}//EN
 {foreach from=$Reservations item=reservation}
 BEGIN:VEVENT
